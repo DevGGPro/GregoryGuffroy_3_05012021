@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+h1 p {
+  font-weight: 300;
+}
+
+.btn {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  margin: 0.5em;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  font-size: 0.9em;
+  font-weight: 600;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+  background: linear-gradient(90deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 164px;
+  height: 29px;
+}
+
+.selection {
+  height: 337px;
+}
+.selection__localisation {
+  background-color: #EAEAEA;
+  height: 50px;
+  color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selection__localisation i {
+  margin-right: 1em;
+}
+.selection__presentation {
+  background-color: #F6F6F6;
+  height: 287px;
+  text-align: center;
+  padding: 3em;
+  box-sizing: border-box;
+}
+.selection__presentation h1 {
+  margin: 0;
+}
+.selection__presentation p {
+  color: #353535;
+}
+
+.fonction {
+  padding: 1em;
+  margin: 20px 0 50px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fonction h1 {
+  width: 100%;
+  margin: 1em 0 1em 0;
+  box-sizing: border-box;
+}
+.fonction__element {
+  background-color: #F6F6F6;
+  min-width: 323px;
+  width: 100%;
+  height: 72px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin: 0.7em;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #2f2f2f;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.fonction__element:hover {
+  background-color: #E9E3F1;
+}
+.fonction__element:hover i {
+  color: #9356DC;
+}
+.fonction__element div {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  left: -11px;
+}
+.fonction__element i {
+  color: #8F8F8F;
+  margin: 1.5em;
+  box-sizing: border-box;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurants a {
+  text-decoration: none;
+  color: #000000;
+}
+.restaurants h1 {
+  width: 100%;
+}
+.restaurants__element {
+  background-color: #FFFFFF;
+  min-width: 335px;
+  width: 90%;
+  height: 251px;
+  margin: 0 0 1.5em 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.restaurants__element img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__element figcaption {
+  width: 100%;
+  height: 30%;
+  margin-top: -4px;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+.restaurants__element h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.restaurants__element p {
+  margin: 0;
+}
+.restaurants__element i {
+  position: absolute;
+  font-size: 22px;
+  top: 20px;
+  right: 40px;
+}
+.restaurants__element i:hover {
+  cursor: hand;
+}
+.restaurants__element div {
+  position: absolute;
+  width: 81px;
+  height: 29px;
+  line-height: 29px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #1b6150;
+  top: 15px;
+  right: 10px;
+  border-radius: 2px;
+}
+
+.footer {
+  background-color: #353535;
+  width: 100%;
+  padding: 1.5em;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+.footer h1 {
+  font-size: 20px;
+  font-family: "Shrikhand", sans-serif;
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer li {
+  margin: 0.3em 0 0.3em 0;
+}
+.footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer i {
+  font-size: 12px;
+  margin-right: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */

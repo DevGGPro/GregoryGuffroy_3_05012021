@@ -1,0 +1,16 @@
+.btn{
+    width: 218px;
+    height: 50px;
+    border-radius: $border-rad-25;
+    border: none;
+    margin: 0.5em;
+    color: $color-white;
+    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+    font-size: 0.9em;
+    font-weight: 600;
+    @include box-shadows-light;
+    &:hover{
+        background: linear-gradient(90deg, $color-primary 0%, $color-secondary 100%);
+        @include box-shadows-dark;
+    }
+}

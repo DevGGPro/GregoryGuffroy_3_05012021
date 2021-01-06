@@ -1,0 +1,28 @@
+.footer{
+    background-color: $color-grey-dark;
+    width: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    color: $color-white;
+    h1{
+        font-size: 20px;
+        font-family: 'Shrikhand', sans-serif;
+
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        margin: 0.3em 0 0.3em 0;
+    }
+    a{
+        text-decoration: none;
+        color: $color-white;
+    }
+    i{
+        font-size: 12px;
+        margin-right: .5em;
+    }
+}

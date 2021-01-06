@@ -1,0 +1,19 @@
+{
+  "name": "gregoryguffroy_3_05012021",
+  "version": "1.0.0",
+  "description": "Ohmyfood! - Dynamisez une page web avec des animations CSS",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevGGPro/GregoryGuffroy_3_05012021.git"
+  },
+  "author": "DevGGPro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevGGPro/GregoryGuffroy_3_05012021/issues"
+  },
+  "homepage": "https://github.com/DevGGPro/GregoryGuffroy_3_05012021#readme"
+}

@@ -1,0 +1,52 @@
+.fonction{
+    padding: 1em;
+    margin: 20px 0 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & h1{
+        width: 100%;
+        margin: 1em 0 1em 0;
+        box-sizing: border-box;
+    }
+    &__element{
+        background-color: $color-grey-light;
+        min-width: 323px;
+        width: 100%;
+        height: 72px;
+        border-radius: $border-rad-20;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        margin: 0.7em;
+        box-sizing: border-box;
+        font-weight: 500;
+        color: $color-txt;
+        @include box-shadows-light;
+        &:hover{
+            background-color: #E9E3F1;
+            & i{
+                color: $color-primary;
+            }
+        }
+        & div{
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: $border-rad-25;
+            background-color: $color-primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-white;
+            left: -11px;
+        }
+        & i{
+            color: $color-font-awesome;
+            margin: 1.5em;
+            box-sizing: border-box;
+        }
+    }
+}

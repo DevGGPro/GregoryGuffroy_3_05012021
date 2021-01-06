@@ -1,0 +1,27 @@
+.selection{
+    height: 337px;
+    &__localisation{
+        background-color: $color-grey-medium;
+        height: 50px;
+        color: $color-grey-dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & i{
+            margin-right: 1em;
+        }
+    }
+    &__presentation{
+        background-color: $color-grey-light;
+        height: 287px;
+        text-align: center;
+        padding: 3em;
+        box-sizing: border-box;
+        & h1{
+            margin: 0;
+        }
+        & p{
+            color: $color-grey-dark;
+        }
+    }
+}
