@@ -178,7 +178,7 @@ h1 p {
   right: 40px;
 }
 .restaurants__element i:hover {
-  cursor: hand;
+  cursor: grab;
 }
 .restaurants__element div {
   position: absolute;
