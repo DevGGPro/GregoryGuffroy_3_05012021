@@ -1,0 +1,99 @@
+#main{ 
+    img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    .menu__btn{
+        background-color: $color-grey-light;
+        width: 100%;
+        height: 125px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.menu{
+    background-color: $color-grey-light;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    padding-top: 40px;
+    margin-top: -44px;
+    position: relative;
+    &__titre{
+        padding: 0 1em;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            margin: 0;
+            font-family: 'shrikhand', sans-serif;
+            font-size: 27px;
+        }
+        i{
+            font-size: 24px;
+            box-sizing: border-box;
+            padding-right: 1em;
+        }
+    }
+    &__entree{
+        padding: 0 1em 1em 1em;
+        h2{
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        hr{
+            width: 50px;
+            background-color: $color-tertiary;
+            height: 3px;
+            border: none;
+            margin: 0.25em 0 1em 0;
+        }
+    }
+}
+.plats{
+    background-color: $color-white;
+    width: 100%;
+    height: 68px;
+    border-radius: $border-rad-15;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    @include box-shadows-light;
+    &__nom{
+        margin: 0;
+        font-weight: 500;
+        width: 100%;
+        padding-bottom: 2px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__accompagnement{
+        font-size: 14px;
+        font-weight: 300;
+        width: 90%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__prix{
+        font-size: 14px;
+        font-weight: bold;
+        width: 10%;
+        white-space: nowrap;
+        text-align: right;
+    }
+}
+
+@for $i from 1 to 4 {
+    .fade-in#{$i}{
+        animation: fade-in 1000ms 200ms*$i both;
+    }
+}

@@ -1,6 +1,7 @@
 // untils
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
 
 // base
 @import "./base/base";
@@ -11,10 +12,11 @@
 
 // layout
 @import "./layout/header";
+@import "./layout/nav";
 @import "./layout/selection";
 @import "./layout/fonction";
 @import "./layout/restaurants";
 @import "./layout/footer";
 
 // pages
-
+@import "./pages/menu"
