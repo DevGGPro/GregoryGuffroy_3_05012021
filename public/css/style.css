@@ -19,7 +19,8 @@
     color: transparent;
     background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
     background-size: 100%;
-    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
 body {
@@ -166,6 +167,7 @@ nav i {
 }
 .restaurants div {
   position: relative;
+  width: 100%;
 }
 .restaurants input {
   visibility: hidden;
