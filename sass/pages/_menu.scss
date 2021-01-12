@@ -87,6 +87,7 @@
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     &__hidden{
         background-color: $color-tertiary;
@@ -114,23 +115,22 @@
         font-weight: 500;
         width: 100%;
         padding-bottom: 2px;
+        overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden;
     }
     &__accompagnement{
         font-size: 14px;
         font-weight: 300;
         width: 85%;
+        overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden;
     }
     &__prix{
         font-size: 14px;
         font-weight: bold;
         width: 15%;
-        white-space: nowrap;
         text-align: right;
     }
 }

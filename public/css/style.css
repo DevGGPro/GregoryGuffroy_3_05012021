@@ -25,7 +25,7 @@
 }
 @keyframes slider {
   to {
-    width: 60px;
+    width: 20%;
   }
 }
 @keyframes rotate {
@@ -380,6 +380,7 @@ nav i {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .plats__hidden {
   background-color: #99E2D0;
@@ -407,23 +408,22 @@ nav i {
   font-weight: 500;
   width: 100%;
   padding-bottom: 2px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .plats__accompagnement {
   font-size: 14px;
   font-weight: 300;
   width: 85%;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .plats__prix {
   font-size: 14px;
   font-weight: bold;
   width: 15%;
-  white-space: nowrap;
   text-align: right;
 }
 
