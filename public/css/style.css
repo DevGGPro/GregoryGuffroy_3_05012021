@@ -9,6 +9,19 @@
     transform: translateY(0);
   }
 }
+@keyframes heart {
+  from {
+    color: white;
+    text-shadow: 0 0 2px #000;
+  }
+  to {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    color: transparent;
+    background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    background-size: 100%;
+    background-clip: text;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -151,6 +164,29 @@ nav i {
   flex-wrap: wrap;
   justify-content: center;
 }
+.restaurants div {
+  position: relative;
+}
+.restaurants input {
+  visibility: hidden;
+  position: absolute;
+  top: -100vh;
+}
+.restaurants input:checked + label {
+  animation: heart 1000ms forwards;
+}
+.restaurants label {
+  position: absolute;
+  font-size: 27px;
+  bottom: 51px;
+  right: 38px;
+  color: white;
+  text-shadow: 0 0 2px #000;
+}
+.restaurants label:hover {
+  cursor: pointer;
+  animation: heart 1000ms forwards;
+}
 .restaurants a {
   text-decoration: none;
   color: #000000;
@@ -277,10 +313,23 @@ nav i {
   font-family: "shrikhand", sans-serif;
   font-size: 27px;
 }
-.menu__titre i {
-  font-size: 24px;
-  box-sizing: border-box;
+.menu__titre input {
+  visibility: hidden;
+  position: absolute;
+  top: -100vh;
+}
+.menu__titre input:checked + label {
+  animation: heart 1000ms forwards;
+}
+.menu__titre label {
+  font-size: 27px;
   padding-right: 1em;
+  color: white;
+  text-shadow: 0 0 2px #000;
+}
+.menu__titre label:hover {
+  cursor: pointer;
+  animation: heart 1000ms forwards;
 }
 .menu__entree {
   padding: 0 1em 1em 1em;

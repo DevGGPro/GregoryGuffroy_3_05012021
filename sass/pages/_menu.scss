@@ -32,10 +32,25 @@
             font-family: 'shrikhand', sans-serif;
             font-size: 27px;
         }
-        i{
-            font-size: 24px;
-            box-sizing: border-box;
+        input{
+            visibility: hidden;
+            position: absolute;
+            top: -100vh;
+            &:checked + label{
+                animation: heart 1000ms forwards;
+            }
+        }
+        label{
+            font-size: 27px;
             padding-right: 1em;
+            color: white;
+            text-shadow: 0 0 2px #000;
+            &:hover{
+                cursor: pointer;
+                animation: heart 1000ms forwards;
+            }
+    
+
         }
     }
     &__entree{
