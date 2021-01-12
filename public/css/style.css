@@ -23,6 +23,16 @@
     color: transparent;
   }
 }
+@keyframes slider {
+  to {
+    width: 60px;
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -355,12 +365,42 @@ nav i {
   width: 100%;
   height: 68px;
   border-radius: 15px;
-  padding: 1em;
   margin-bottom: 1em;
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.plats:hover {
+  cursor: pointer;
+}
+.plats__contenu {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.plats__hidden {
+  background-color: #99E2D0;
+  width: 0px;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plats__hidden i {
+  color: #FFFFFF;
+  font-size: 20px;
+  display: none;
+}
+.plats:hover .plats__hidden {
+  animation: slider 400ms forwards;
+}
+.plats:hover .plats__hidden i {
+  display: block;
+  animation: rotate 600ms;
 }
 .plats__nom {
   margin: 0;
@@ -374,7 +414,7 @@ nav i {
 .plats__accompagnement {
   font-size: 14px;
   font-weight: 300;
-  width: 90%;
+  width: 85%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -382,7 +422,7 @@ nav i {
 .plats__prix {
   font-size: 14px;
   font-weight: bold;
-  width: 10%;
+  width: 15%;
   white-space: nowrap;
   text-align: right;
 }

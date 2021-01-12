@@ -49,8 +49,6 @@
                 cursor: pointer;
                 animation: heart 1000ms forwards;
             }
-    
-
         }
     }
     &__entree{
@@ -75,12 +73,42 @@
     width: 100%;
     height: 68px;
     border-radius: $border-rad-15;
-    padding: 1em;
     margin-bottom: 1em;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
     @include box-shadows-light;
+    &:hover{
+        cursor: pointer;
+    }
+    &__contenu{
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__hidden{
+        background-color: $color-tertiary;
+        width: 0px;
+        height: 100%;
+        border-radius: 0 $border-rad-15 $border-rad-15 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: $color-white;
+            font-size: 20px;
+            display: none;
+        }
+    }
+    &:hover &__hidden{
+        animation: slider 400ms forwards;
+        i{
+            display: block;
+            animation: rotate 600ms;    
+        }
+    }
     &__nom{
         margin: 0;
         font-weight: 500;
@@ -93,7 +121,7 @@
     &__accompagnement{
         font-size: 14px;
         font-weight: 300;
-        width: 90%;
+        width: 85%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -101,7 +129,7 @@
     &__prix{
         font-size: 14px;
         font-weight: bold;
-        width: 10%;
+        width: 15%;
         white-space: nowrap;
         text-align: right;
     }
