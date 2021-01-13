@@ -296,6 +296,7 @@ nav i {
 }
 .restaurants__element p {
   margin: 0;
+  font-weight: 300;
 }
 .restaurants__element .far {
   position: absolute;
