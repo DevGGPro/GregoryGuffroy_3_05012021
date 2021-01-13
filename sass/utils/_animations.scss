@@ -32,3 +32,25 @@
         transform: rotate(360deg);
     }
 }
+@keyframes loader{
+    0%{
+        background-color: $color-primary;
+        z-index: 1;
+    }
+    99%{
+        background-color: $color-primary;
+        z-index: 1;
+    }
+    100%{
+        z-index: -2;
+    }
+}
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+      z-index: 2;
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
