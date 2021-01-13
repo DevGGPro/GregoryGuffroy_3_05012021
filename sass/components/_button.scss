@@ -1,7 +1,10 @@
 .btn{
+    display: block;
     width: 218px;
     height: 50px;
+    line-height: 50px;
     border-radius: $border-rad-25;
+    text-decoration: none;
     border: none;
     margin: 0.5em;
     color: $color-white;
@@ -12,6 +15,8 @@
     transition: box-shadow 400ms;
     &:hover{
         cursor: pointer;
+        text-shadow: 0 0 20px #fff;
         @include box-shadows-dark;
     }
+ 
 }
