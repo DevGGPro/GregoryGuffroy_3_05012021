@@ -4,3 +4,10 @@ body{
     box-sizing: border-box;
     position: relative;
 }
+.wrapper{
+    min-width: 375px;
+    @include desktop {
+        margin: auto;
+        max-width: 1280px;
+    }
+}

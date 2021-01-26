@@ -5,9 +5,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include desktop{
+        justify-content: space-around;
+    }
     div{
         position: relative;
         width: 100%;
+        @include desktop{
+            width: 48%;
+        }
     }
     input{
         visibility: hidden;

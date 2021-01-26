@@ -5,3 +5,9 @@
 @mixin box-shadows-dark{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
 }
+
+@mixin desktop {
+    @media screen and (min-width:1280px){
+        @content;
+    }
+}
